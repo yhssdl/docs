@@ -19,7 +19,6 @@ services:
        - logs:/var/log/nginx
      #docker 重启后，容器自启动
      restart: always
-
 volumes:
   html:
   etc:
@@ -28,23 +27,23 @@ volumes:
 
 - 下载 nginx.yml 文件
 
-```sh
-apt install wget
-apk add wget
-wget https://gitee.com/yhssdl/docs/raw/master/docker/nginx.yml
-```
+    ```sh
+    apt install wget
+    apk add wget
+    wget https://gitee.com/yhssdl/docs/raw/master/docker/nginx.yml
+    ```
 
 - 创建容器、运行 nginx
 
-```sh
-docker-compose -f nginx.yml up -d #后台运行，访问端口8088
-```
+    ```sh
+    docker-compose -f nginx.yml up -d #后台运行，访问端口8088
+    ```
 
 - 停止服务，并删除容器。
 
-```sh
-docker-compose -f nginx.yml down #停止并删除服务
-```
+    ```sh
+    docker-compose -f nginx.yml down #停止并删除服务
+    ```
 
 <br>
 
@@ -52,9 +51,7 @@ docker-compose -f nginx.yml down #停止并删除服务
 <details>
 <summary>点击开展 wordpress.yml 配置</summary><pre><code>
 version: '3.1'
-
 services:
-
   wordpress:
     image: wordpress
     restart: always
@@ -67,7 +64,6 @@ services:
       WORDPRESS_DB_NAME: exampledb
     volumes:
       - wordpress:/var/www/html
-
   db:
     image: mysql:5.7
     restart: always
@@ -78,7 +74,6 @@ services:
       MYSQL_RANDOM_ROOT_PASSWORD: '1'
     volumes:
       - db:/var/lib/mysql
-
 volumes:
   wordpress:
   db:
@@ -88,20 +83,20 @@ volumes:
 
 - 下载 wordpress.yml 文件
 
-```sh
-apt install wget
-apk add wget
-wget https://gitee.com/yhssdl/docs/raw/master/docker/wordpress.yml
-```
+    ```sh
+    apt install wget
+    apk add wget
+    wget https://gitee.com/yhssdl/docs/raw/master/docker/wordpress.yml
+    ```
 
 - 创建容器、运行 wordpress
 
-```sh
-docker-compose -f wordpress.yml up -d #后台运行，访问端口8088
-```
+    ```sh
+    docker-compose -f wordpress.yml up -d #后台运行，访问端口8088
+    ```
 
 - 停止服务，并删除容器。
 
-```sh
-docker-compose -f wordpress.yml down #停止并删除服务
-```
+    ```sh
+    docker-compose -f wordpress.yml down #停止并删除服务
+    ```
