@@ -7,7 +7,7 @@
 ``` sh
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 sed -i 's/#http/http/g' /etc/apk/repositories
-apk update && apk upgrade -y
+apk update && apk upgrade
 ```
 
 2. 华为镜像站
@@ -15,7 +15,7 @@ apk update && apk upgrade -y
 ``` sh
 sed -i 's/dl-cdn.alpinelinux.org/repo.huaweicloud.com/g' /etc/apk/repositories
 sed -i 's/#http/http/g' /etc/apk/repositories
-apk update && apk upgrade -y
+apk update && apk upgrade
 ```
 
 3. 中科大镜像站
@@ -23,7 +23,7 @@ apk update && apk upgrade -y
 ``` sh
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 sed -i 's/#http/http/g' /etc/apk/repositories
-apk update && apk upgrade -y
+apk update && apk upgrade
 ```
 
 
