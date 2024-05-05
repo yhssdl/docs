@@ -63,5 +63,5 @@
 3. 运行新的容器，测试是否成功
 
     ```sh
-    docker run -p 80:80 --name lpszoj yhssdl/lpszoj
+    docker run -d -p 80:80 --name lpszoj yhssdl/lpszoj
     ```
