@@ -5,7 +5,7 @@
 1. 清华镜像站
 
 ``` sh
-sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.tuna.tsinghua.edu.cn/g' /etc/apk/repositories
 sed -i 's/#http/http/g' /etc/apk/repositories
 apk update && apk upgrade -y
 ```
