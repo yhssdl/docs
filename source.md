@@ -2,13 +2,30 @@
 
 ## Alpine 国内源
 
-> 使用脚本直接更新
+1. 清华镜像站
 
 ``` sh
 sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
 sed -i 's/#http/http/g' /etc/apk/repositories
 apk update && apk upgrade -y
 ```
+
+2. 华为镜像站
+
+``` sh
+sed -i 's/dl-cdn.alpinelinux.org/repo.huaweicloud.com/g' /etc/apk/repositories
+sed -i 's/#http/http/g' /etc/apk/repositories
+apk update && apk upgrade -y
+```
+
+3. 中科大镜像站
+
+``` sh
+sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositories
+sed -i 's/#http/http/g' /etc/apk/repositories
+apk update && apk upgrade -y
+```
+
 
 ## Debian 12 国内源
 
