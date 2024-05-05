@@ -1,6 +1,6 @@
-# 常用 linux 国内源
+## 常用 linux 国内源
 
-## Alpine 国内源
+### Alpine 国内源
 
 1. 清华镜像站
 
@@ -27,7 +27,7 @@ apk update && apk upgrade
 ```
 
 
-## Debian 12 国内源
+### Debian 12 国内源
 
 1. 清华镜像站
 
@@ -68,7 +68,7 @@ deb https://mirrors.ustc.edu.cn/debian-security/ bookworm-security main contrib 
 deb-src https://mirrors.ustc.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware
 ```
 
-## Debian 11 国内源
+### Debian 11 国内源
 
 1. 清华镜像站
 
@@ -109,7 +109,7 @@ deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib 
 deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 ```
 
-## Ubunut 23.10 国内源(mantic)
+### Ubunut 23.10 国内源(mantic)
 
 1. 清华镜像站
 
@@ -124,7 +124,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ mantic-security main restricted
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ mantic-security main restricted universe multiverse
 ```
 
-## Ubunut 23.04 国内源(lunar)
+### Ubunut 23.04 国内源(lunar)
 
 1. 清华镜像站
 
@@ -140,7 +140,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ lunar-security main restric
 ```
 
 
-## Ubunut 22.04 国内源(jammy)
+### Ubunut 22.04 国内源(jammy)
 
 1. 清华镜像站
 
@@ -183,7 +183,7 @@ deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe 
 deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 ```
 
-## Ubunut 20.04 国内源(focal)
+### Ubunut 20.04 国内源(focal)
 
 1. 清华镜像站
 

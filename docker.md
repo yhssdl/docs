@@ -1,6 +1,6 @@
-# Docker 安装使用日记
+## Docker 安装使用日记
 
-## Docker 引擎安装
+### Docker 引擎安装
 
 1. Debian、Ubunut
 
@@ -18,7 +18,7 @@ rc-update add docker boot
 rc-service docker start
 ```
 
-## Docker 阿里镜像加速
+### Docker 阿里镜像加速
 
 1. Debian Ubunut
 
@@ -50,7 +50,7 @@ rc-service docker restart
 docker info | grep Mirrors -A 1
 ```
 
-## Docker-compose 安装
+### Docker-compose 安装
 
 ```sh
 curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose

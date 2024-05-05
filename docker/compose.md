@@ -1,8 +1,6 @@
-# 常用 Docker-compose配置文件
-
 > 将相应的配置文件上传到 Docker 主机上，就可以一键安装。
 
-## Wordpress [点击查看配置 ](wordpress.yml)
+### Wordpress [点击查看配置 ](wordpress.yml)
 
 - 执行命令一键下载并运行 wordpress
 
