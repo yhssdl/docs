@@ -44,3 +44,20 @@ tee /etc/docker/daemon.json <<-'EOF'
 EOF
 rc-service docker restart
 ```
+
+## Docker-compose 安装
+
+```sh
+curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m`  > /usr/local/bin/docker-compose
+```
+> 给docker-compose赋予运行权限
+```sh
+chmod +x /usr/local/bin/docker-compose
+ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+
+> 测试是否成功
+
+```sh
+docker-compose --version
+```
