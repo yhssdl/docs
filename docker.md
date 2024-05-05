@@ -44,16 +44,26 @@ tee /etc/docker/daemon.json <<-'EOF'
 EOF
 rc-service docker restart
 ```
+> 查看是否生效
+
+```sh
+docker info | grep Mirrors -A 1
+```
 
 ## Docker-compose 安装
 
 ```sh
-curl -L https://get.daocloud.io/docker/compose/releases/download/1.25.5/docker-compose-`uname -s`-`uname -m`  > /usr/local/bin/docker-compose
+curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 ```
 > 给docker-compose赋予运行权限
 ```sh
 chmod +x /usr/local/bin/docker-compose
 ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+```
+> 对于 ***alpine***，需要以下依赖包： py-pip，python-dev，libffi-dev，openssl-dev，gcc，libc-dev，和 make。
+
+```sh
+apk add py-pip python-dev libffi-dev openssl-dev gcc libc-dev make
 ```
 
 > 测试是否成功
