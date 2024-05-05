@@ -1,8 +1,39 @@
 > 将相应的配置文件上传到 Docker 主机上，就可以一键安装。
 
-### Wordpress [点击查看配置 ](wordpress.yml)
+### Wordpress [点击查看文件](wordpress.yml)
+<details>
+<summary>点击开展 wordpress.yml 配置</summary><pre><code>
+version: '3.3'
+services:
+   db:
+     image: mysql:5.7
+     volumes:
+       - db_data:/var/lib/mysql
+     restart: always
+     environment:
+       MYSQL_ROOT_PASSWORD: somewordpress
+       MYSQL_DATABASE: wordpress
+       MYSQL_USER: wordpress
+       MYSQL_PASSWORD: wordpress
+   wordpress:
+     depends_on:
+       - db
+     image: wordpress:latest
+     ports:
+       - "8000:80"
+     restart: always
+     environment:
+       WORDPRESS_DB_HOST: db:3306
+       WORDPRESS_DB_USER: wordpress
+       WORDPRESS_DB_PASSWORD: wordpress
+       WORDPRESS_DB_NAME: wordpress
+volumes:
+    db_data: {}
+</code></pre></details>
 
-- 执行命令一键下载并运行 wordpress
+---
+
+- 一键下载并运行 wordpress
 
 ```sh
 docker-compose -f wordpress.yml up -d #后台运行
