@@ -17,6 +17,7 @@ apk add docker
 rc-update add docker boot
 rc-service docker start
 ```
+<br>
 
 ### Docker 阿里镜像加速
 
@@ -49,6 +50,7 @@ rc-service docker restart
 ```sh
 docker info | grep Mirrors -A 1
 ```
+<br>
 
 ### Docker-compose 安装
 

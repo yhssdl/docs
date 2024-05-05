@@ -26,6 +26,7 @@ sed -i 's/#http/http/g' /etc/apk/repositories
 apk update && apk upgrade
 ```
 
+<br>
 
 ### Debian 12 国内源
 
@@ -67,6 +68,7 @@ deb-src https://mirrors.ustc.edu.cn/debian/ bookworm-backports main contrib non-
 deb https://mirrors.ustc.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware
 deb-src https://mirrors.ustc.edu.cn/debian-security/ bookworm-security main contrib non-free non-free-firmware
 ```
+<br>
 
 ### Debian 11 国内源
 
@@ -108,6 +110,7 @@ deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-
 deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 ```
+<br>
 
 ### Ubunut 23.10 国内源(mantic)
 
@@ -123,6 +126,7 @@ deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ mantic-backports main restr
 deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ mantic-security main restricted universe multiverse
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ mantic-security main restricted universe multiverse
 ```
+<br>
 
 ### Ubunut 23.04 国内源(lunar)
 
@@ -139,6 +143,7 @@ deb https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ lunar-security main restricted 
 deb-src https://mirrors.tuna.tsinghua.edu.cn/ubuntu/ lunar-security main restricted universe multiverse
 ```
 
+<br>
 
 ### Ubunut 22.04 国内源(jammy)
 
@@ -182,6 +187,7 @@ deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-backports main restricted univ
 deb https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 deb-src https://mirrors.ustc.edu.cn/ubuntu/ jammy-security main restricted universe multiverse
 ```
+<br>
 
 ### Ubunut 20.04 国内源(focal)
 

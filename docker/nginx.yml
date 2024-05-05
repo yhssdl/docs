@@ -1,0 +1,20 @@
+version: "3"
+services:
+   web:
+     #使用的镜像
+     image: nginx:alpine3.19
+     #容器的映射端口
+     ports:
+       - 80:80
+     #定义挂载点         
+     volumes:
+       - html:/usr/share/nginx/html
+       - etc:/etc/nginx
+       - logs:/var/log/nginx
+     #docker 重启后，容器自启动
+     restart: always
+
+volumes:
+  html:
+  etc:
+  logs:

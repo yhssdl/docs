@@ -1,0 +1,39 @@
+version: '3.8'
+
+services:
+  web:
+    #使用的镜像
+    image: nginx:alpine3.19
+    #容器的映射端口
+    ports:
+      - 80:80
+    #定义挂载点         
+    volumes:
+      - html:/usr/share/nginx/html
+      - etc:/etc/nginx
+      - logs:/var/log/nginx
+    #docker 重启后，容器自启动
+    restart: always
+
+  php-fpm:
+    image: php:8.3-fpm-alpine3.19
+    volumes:
+      - html:/usr/share/nginx/html
+    command: bash -c "php-fpm"
+
+  mysql:
+    image: mysql:5.7
+    restart: always
+    environment:
+      MYSQL_DATABASE: exampledb
+      MYSQL_USER: exampleuser
+      MYSQL_PASSWORD: examplepass
+      MYSQL_RANDOM_ROOT_PASSWORD: '1'
+    volumes:
+      - db:/var/lib/mysql
+
+volumes:
+  html:
+  etc:
+  logs:
+  db:
