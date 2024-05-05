@@ -17,3 +17,30 @@ apk add docker
 rc-update add docker boot
 rc-service docker start
 ```
+
+## Docker 阿里镜像加速
+
+1. Debian Ubunut
+
+```sh
+mkdir -p /etc/docker
+tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://zwfid6bx.mirror.aliyuncs.com"]
+}
+EOF
+systemctl daemon-reload
+systemctl restart docker
+```
+
+2. Alpine
+
+```sh
+mkdir -p /etc/docker
+tee /etc/docker/daemon.json <<-'EOF'
+{
+  "registry-mirrors": ["https://zwfid6bx.mirror.aliyuncs.com"]
+}
+EOF
+rc-service docker restart
+```
