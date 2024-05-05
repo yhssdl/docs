@@ -24,8 +24,6 @@
     docker run -it -p 80:80 --name lpszoj lpszoj nginx
     ```
 
-
-
 4. 修改 `docker-entrypoint.sh` 文件内容，将 `if` 中的 `nginx` 改为 `sh`
 
     ```sh
@@ -47,20 +45,20 @@
     ```sh
     exit
     ```
-戏
-1. 将容器重新打包为新的镜像
+
+7. 将容器重新打包为新的镜像
 
     ```sh
     docker commit lpszoj yhssdl/lpszoj
     ```
 
-2. 删除容器
+8. 删除容器
 
     ```sh
     docker rm lpszoj
     ```
 
-3. 运行新的容器，测试是否成功
+9. 运行新的容器，测试是否成功
 
     ```sh
     docker run -d -p 80:80 --name lpszoj yhssdl/lpszoj
