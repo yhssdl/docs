@@ -84,13 +84,10 @@ deb-src https://mirrors.huaweicloud.com/debian/ bullseye-backports main non-free
 ```txt
 deb https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
 deb-src https://mirrors.ustc.edu.cn/debian/ bullseye main contrib non-free
-
 deb https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free
 deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-updates main contrib non-free
-
 deb https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free
 deb-src https://mirrors.ustc.edu.cn/debian/ bullseye-backports main contrib non-free
-
 deb https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 deb-src https://mirrors.ustc.edu.cn/debian-security/ bullseye-security main contrib non-free
 ```
