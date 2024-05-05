@@ -7,11 +7,11 @@
 - 执行命令一键下载并运行 wordpress
 
 ```sh
-docker-compose -f docker-compose.wordpress.yml up -d #后台运行
+docker-compose -f wordpress.yml up -d #后台运行
 ```
 
 - 停止服务，并删除容器。
 
 ```sh
-docker-compose -f docker-compose.wordpress.yml down #停止并删除服务
+docker-compose -f wordpress.yml down #停止并删除服务
 ```
